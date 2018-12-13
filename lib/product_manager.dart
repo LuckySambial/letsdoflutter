@@ -3,6 +3,8 @@ import 'dart:convert';
 import 'dart:io';
 
 import './products.dart';
+import 'containers/nearby_weather.dart';
+import './components/text_comp.dart';
 
 class ProductManager extends StatefulWidget {
   @override
@@ -16,22 +18,31 @@ class _ProductManagerState extends State<ProductManager> {
   String _apiKey = '47ee9f58572d02786966d718ee8292cb';
 
   @override
+    void initState() {
+      getCurrentWeather().then((res) {
+                  this.setState(() {
+                    _products = res;
+                  });
+                });
+      super.initState();
+    }
+
+  @override
   Widget build(BuildContext context) {
     return Container(
       width: 500,
       decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topRight,
-              end: Alignment.bottomLeft,
-              stops: [0.1, 0.5, 0.7, 0.9],
-              colors: [
-                Colors.purple[800],
-                Colors.purple[700],
-                Colors.purple[600],
-                Colors.purple[400],
-              ],
-            ),
-          ),
+        gradient: LinearGradient(
+          begin: Alignment.topRight,
+          end: Alignment.bottomLeft,
+          colors: [
+            Colors.purple[400],
+            Colors.purple[600],
+            Colors.purple[800],
+            Colors.purple[900],
+          ],
+        ),
+      ),
       child: Column(
         children: [
           Container(
@@ -43,16 +54,19 @@ class _ProductManagerState extends State<ProductManager> {
                   this.setState(() {
                     _products = res;
                   });
-                  print('Success ' + _products.toString());
                 });
               },
-              child: Text(
-                'Check your City Weather!',
-                style: TextStyle(color: Theme.of(context).accentColor),
-              ),
+              child: TextComp(text: 'Refresh Weather!',),
             ),
           ),
           checkForProducts(_products),
+          Container(
+            child: RaisedButton(
+              color: Theme.of(context).primaryColor,
+              onPressed: () => nearbyWeather(),
+              child: TextComp(text:'Nearby Me Weather!'),
+            ),
+          )
         ],
       ),
     );
@@ -62,7 +76,7 @@ class _ProductManagerState extends State<ProductManager> {
     if (_products != null) {
       return Products(products);
     } else {
-      return Text('Oops!!!');
+      return TextComp(text:'Loading!!!');
     }
   }
 
@@ -80,5 +94,9 @@ class _ProductManagerState extends State<ProductManager> {
     } else {
       return data;
     }
+  }
+
+  nearbyWeather() {
+    Navigator.push(context, MaterialPageRoute(builder: (context)=> NearByWeather()));
   }
 }
