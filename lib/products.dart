@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
 
+import './components/text_comp.dart';
+
 class Products extends StatelessWidget {
   final Map<String, dynamic> products;
   Products(this.products);
@@ -11,52 +13,42 @@ class Products extends StatelessWidget {
     return Column(
       children: <Widget>[
         //Image.asset('assets/c2.jpg'),
-        Text(weather['main']),
-        Image.network(
-            'https://openweathermap.org/img/w/' + weather['icon'] + '.png'),
-        Text(products['name']),
+        TextComp(text: weather['main'], fontSize: 30.0),
+        Container(
+          width: 100,
+          height: 100,
+          child: Image.network(
+            'https://openweathermap.org/img/w/' + weather['icon'] + '.png',
+          fit: BoxFit.cover
+          ),
+        ),
+        TextComp(text: products['name'], fontSize: 30.0),
         Container(
             margin: EdgeInsets.all(20),
             child: Column(
               children: <Widget>[
                 Row(
                   children: <Widget>[
-                    Text('Temprature: '),
-                    Container(
-                      margin: EdgeInsets.fromLTRB(50, 0, 0, 0),
-                      color: Colors.pink,
-                      child: Text(mainWeather['temp'].toString()),
-                    )
+                    TextComp(text: 'Temprature: '),
+                    TextComp(text: mainWeather['temp'].toString()),
                   ],
                 ),
                 Row(
                   children: <Widget>[
-                    Text('humidity: '),
-                    Container(
-                      margin: EdgeInsets.fromLTRB(50, 0, 0, 0),
-                      color: Colors.pink,
-                      child: Text(mainWeather['humidity'].toString()),
-                    )
+                    TextComp(text: 'humidity: '),
+                    TextComp(text: mainWeather['humidity'].toString()),
                   ],
                 ),
                 Row(
                   children: <Widget>[
-                    Text('Min Temp: '),
-                    Container(
-                      margin: EdgeInsets.fromLTRB(50, 0, 0, 0),
-                      color: Colors.pink,
-                      child: Text(mainWeather['temp_min'].toString()),
-                    )
+                    TextComp(text: 'Min Temp: '),
+                    TextComp(text: mainWeather['temp_min'].toString()),
                   ],
                 ),
                 Row(
                   children: <Widget>[
-                    Text('Max Temp: '),
-                    Container(
-                      margin: EdgeInsets.fromLTRB(50, 0, 0, 0),
-                      color: Colors.pink,
-                      child: Text(mainWeather['temp_min'].toString()),
-                    )
+                    TextComp(text: 'Max Temp: '),
+                    TextComp(text: mainWeather['temp_min'].toString()),
                   ],
                 ),
               ],

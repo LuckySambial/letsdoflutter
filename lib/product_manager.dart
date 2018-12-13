@@ -17,28 +17,44 @@ class _ProductManagerState extends State<ProductManager> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Container(
-          margin: EdgeInsets.all(20),
-          child: RaisedButton(
-            color: Theme.of(context).primaryColor,
-            onPressed: () {
-              getCurrentWeather().then((res) {
-                this.setState(() {
-                  _products = res;
-                });
-                print('Success ' + _products.toString());
-              });
-            },
-            child: Text(
-              'Check your City Weather!',
-              style: TextStyle(color: Theme.of(context).accentColor),
+    return Container(
+      width: 500,
+      decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topRight,
+              end: Alignment.bottomLeft,
+              stops: [0.1, 0.5, 0.7, 0.9],
+              colors: [
+                Colors.purple[800],
+                Colors.purple[700],
+                Colors.purple[600],
+                Colors.purple[400],
+              ],
             ),
           ),
-        ),
-        checkForProducts(_products),
-      ],
+      child: Column(
+        children: [
+          Container(
+            margin: EdgeInsets.all(20),
+            child: RaisedButton(
+              color: Theme.of(context).primaryColor,
+              onPressed: () {
+                getCurrentWeather().then((res) {
+                  this.setState(() {
+                    _products = res;
+                  });
+                  print('Success ' + _products.toString());
+                });
+              },
+              child: Text(
+                'Check your City Weather!',
+                style: TextStyle(color: Theme.of(context).accentColor),
+              ),
+            ),
+          ),
+          checkForProducts(_products),
+        ],
+      ),
     );
   }
 
