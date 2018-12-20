@@ -13,13 +13,12 @@ class NearByWeather extends StatefulWidget {
 }
 
 class NearByWeatherState extends State<NearByWeather> {
-  List<String> finalData;
+  List<Weather> finalData;
   @override
   void initState() {
     getNearWeather().then((response) {
-      print(response.toString());
       setState(() {
-        finalData=response;
+        finalData = response;
       });
     });
     super.initState();
@@ -58,8 +57,30 @@ class NearByWeatherState extends State<NearByWeather> {
           itemCount: cityList.length,
           itemBuilder: (context, index) {
             return ListTile(
-              title: TextComp(text:cityList[index]),
-            );
+                title: GestureDetector(
+                    onTap: () =>
+                        print("clicked!   " + cityList[index].name.toString()),
+                    child: Container(
+                        padding: EdgeInsets.fromLTRB(0, 11, 11, 11),
+                        child: Column(
+                          children: <Widget>[
+                            Row(
+                              children: <Widget>[
+                                TextComp(text: cityList[index].name.toString()),
+                                Image.network(
+                                    'https://openweathermap.org/img/w/' +
+                                        cityList[index].icon +
+                                        '.png')
+                              ],
+                            ),
+                            Container(
+                              padding: EdgeInsets.fromLTRB(0, 11, 11, 11),
+                              alignment: Alignment(-1.0, -1.0),
+                              child: TextComp(
+                                  text: cityList[index].title.toString()),
+                            )
+                          ],
+                        ))));
           },
         ),
       );
@@ -68,10 +89,10 @@ class NearByWeatherState extends State<NearByWeather> {
     }
   }
 
-  Future<List<String>> getNearWeather() async {
-    List<String> dataList = <String>[];
+  Future<List<Weather>> getNearWeather() async {
+    List<Weather> dataList = <Weather>[];
     String url =
-        'https://api.openweathermap.org/data/2.5/find?lat=30.666&lon=76.78&cnt=10&appid=47ee9f58572d02786966d718ee8292cb';
+        'https://api.openweathermap.org/data/2.5/find?lat=30.666&lon=76.78&cnt=20&appid=47ee9f58572d02786966d718ee8292cb';
     var httpClient = new HttpClient();
     var request = await httpClient.getUrl(Uri.parse(url));
     var response = await request.close();
@@ -79,7 +100,17 @@ class NearByWeatherState extends State<NearByWeather> {
       var jsonString = await response.transform(utf8.decoder).join();
       var data = json.decode(jsonString);
       for (Map<String, dynamic> item in data['list']) {
-        dataList.add(item['name'].toString());
+        Map<String, dynamic> mainWeather = item['main'];
+        var waetherArray = item['weather'];
+        Map<String, dynamic> weatherDetails = waetherArray[0];
+        String temp = mainWeather['temp'].toString();
+        dataList.add(new Weather(
+          name: item['name'].toString(),
+          temp: temp,
+          title: weatherDetails['main'],
+          icon: weatherDetails['icon'],
+          description: weatherDetails['description'],
+        ));
       }
       return dataList;
     } else {
@@ -88,3 +119,11 @@ class NearByWeatherState extends State<NearByWeather> {
   }
 }
 
+class Weather {
+  final String name;
+  final String temp;
+  final String title;
+  final String icon;
+  final String description;
+  Weather({this.name, this.temp, this.title, this.icon, this.description});
+}
