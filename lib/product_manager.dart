@@ -18,14 +18,14 @@ class _ProductManagerState extends State<ProductManager> {
   String _apiKey = '47ee9f58572d02786966d718ee8292cb';
 
   @override
-    void initState() {
-      getCurrentWeather().then((res) {
-                  this.setState(() {
-                    _products = res;
-                  });
-                });
-      super.initState();
-    }
+  void initState() {
+    getCurrentWeather().then((res) {
+      this.setState(() {
+        _products = res;
+      });
+    });
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -44,27 +44,14 @@ class _ProductManagerState extends State<ProductManager> {
         ),
       ),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Container(
-            margin: EdgeInsets.all(20),
-            child: RaisedButton(
-              color: Theme.of(context).primaryColor,
-              onPressed: () {
-                getCurrentWeather().then((res) {
-                  this.setState(() {
-                    _products = res;
-                  });
-                });
-              },
-              child: TextComp(text: 'Refresh Weather!',),
-            ),
-          ),
           checkForProducts(_products),
           Container(
             child: RaisedButton(
               color: Theme.of(context).primaryColor,
               onPressed: () => nearbyWeather(),
-              child: TextComp(text:'Nearby Me Weather!'),
+              child: TextComp(text: 'Nearby Me Weather!'),
             ),
           )
         ],
@@ -76,7 +63,7 @@ class _ProductManagerState extends State<ProductManager> {
     if (_products != null) {
       return Products(products);
     } else {
-      return TextComp(text:'Loading!!!');
+      return TextComp(text: 'Loading!!!');
     }
   }
 
@@ -97,6 +84,7 @@ class _ProductManagerState extends State<ProductManager> {
   }
 
   nearbyWeather() {
-    Navigator.push(context, MaterialPageRoute(builder: (context)=> NearByWeather()));
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => NearByWeather()));
   }
 }
