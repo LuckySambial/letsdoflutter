@@ -27,18 +27,15 @@ class NearByWeatherState extends State<NearByWeather> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Near By Weather'),
-      ),
       body: Container(
         width: 500,
+        padding: EdgeInsets.only(top: 20),
         decoration: BoxDecoration(
-            gradient: LinearGradient(colors: [
-          Colors.purple[400],
-          Colors.purple[600],
-          Colors.purple[800],
-          Colors.purple[900],
-        ])),
+          image: new DecorationImage(
+            image: new AssetImage("assets/morning.jpg"),
+            fit: BoxFit.cover,
+          ),
+        ),
         child: Column(
           children: <Widget>[
             checkForWeathersList(finalData),
@@ -51,7 +48,7 @@ class NearByWeatherState extends State<NearByWeather> {
   Widget checkForWeathersList(cityList) {
     if (cityList != null) {
       return Container(
-        height: 500,
+        height: MediaQuery.of(context).size.height,
         width: 500,
         child: ListView.builder(
           itemCount: cityList.length,
@@ -61,7 +58,11 @@ class NearByWeatherState extends State<NearByWeather> {
                     onTap: () =>
                         print("clicked!   " + cityList[index].name.toString()),
                     child: Container(
-                        padding: EdgeInsets.fromLTRB(0, 11, 11, 11),
+                        decoration: BoxDecoration(
+                          color: Color(0xFFB4C56C).withOpacity(0.5),
+                          borderRadius: BorderRadius.all(Radius.circular(50.0)),
+                        ),
+                        padding: EdgeInsets.all(20),
                         child: Column(
                           children: <Widget>[
                             Row(
@@ -85,7 +86,7 @@ class NearByWeatherState extends State<NearByWeather> {
         ),
       );
     } else {
-      return TextComp(text: 'Loading!!!');
+      return Image(image: new AssetImage("assets/loader.gif"));
     }
   }
 

@@ -11,48 +11,83 @@ class Products extends StatelessWidget {
     var weather = products['weather'][0];
     Map<String, dynamic> mainWeather = products['main'];
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      mainAxisSize: MainAxisSize.min,
       children: <Widget>[
-        //Image.asset('assets/c2.jpg'),
-        TextComp(text: weather['main'], fontSize: 30.0),
         Container(
-          width: 100,
-          height: 100,
-          child: Image.network(
-            'https://openweathermap.org/img/w/' + weather['icon'] + '.png',
-          fit: BoxFit.cover
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              Column(
+                children: <Widget>[
+                  TextComp(
+                      text: mainWeather['temp'].toString() + '°',
+                      fontSize: 60.0),
+                  TextComp(text: weather['main'], fontSize: 25.0),
+                  TextComp(text: products['name'], fontSize: 15.0),
+                ],
+              ),
+              Container(
+                width: 150,
+                height: 150,
+                child: Image.network(
+                    'https://openweathermap.org/img/w/' +
+                        weather['icon'] +
+                        '.png',
+                    fit: BoxFit.cover),
+              ),
+            ],
           ),
         ),
-        TextComp(text: products['name'], fontSize: 30.0),
         Container(
-            margin: EdgeInsets.all(20),
-            child: Column(
-              children: <Widget>[
-                Row(
+          decoration: BoxDecoration(
+            color: Color(0xFFB4C56C).withOpacity(0.3),
+            borderRadius: BorderRadius.all(Radius.circular(50.0)),
+          ),
+          margin: EdgeInsets.all(10),
+          padding: EdgeInsets.all(20),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              Container(
+                child: Column(
                   children: <Widget>[
-                    TextComp(text: 'Temprature: '),
-                    TextComp(text: mainWeather['temp'].toString()),
+                    Icon(Icons.wifi_tethering, size: 40, color: Colors.white),
+                    Container(
+                      padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
+                      child: TextComp(text: mainWeather['temp'].toString()),
+                    ),
+                    TextComp(text: 'Temprature', fontSize: 12.0),
                   ],
                 ),
-                Row(
+              ),
+              Container(
+                child: Column(
                   children: <Widget>[
-                    TextComp(text: 'humidity: '),
-                    TextComp(text: mainWeather['humidity'].toString()),
+                    Icon(Icons.wb_incandescent, size: 40, color: Colors.white),
+                    Container(
+                      padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
+                      child: TextComp(text: mainWeather['humidity'].toString()),
+                    ),
+                    TextComp(text: 'humidity', fontSize: 12.0),
                   ],
                 ),
-                Row(
+              ),
+              Container(
+                child: Column(
                   children: <Widget>[
-                    TextComp(text: 'Min Temp: '),
-                    TextComp(text: mainWeather['temp_min'].toString()),
+                    Icon(Icons.cloud_circle, size: 40, color: Colors.white),
+                    Container(
+                      padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
+                      child: TextComp(text: mainWeather['temp_min'].toString()),
+                    ),
+                    TextComp(text: 'Min Temp', fontSize: 12.0),
                   ],
                 ),
-                Row(
-                  children: <Widget>[
-                    TextComp(text: 'Max Temp: '),
-                    TextComp(text: mainWeather['temp_min'].toString()),
-                  ],
-                ),
-              ],
-            )),
+              ),
+            ],
+          ),
+        ),
       ],
     );
   }

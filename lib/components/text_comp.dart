@@ -8,7 +8,7 @@ class TextComp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.fromLTRB(20, 0, 0, 0),
+      margin: EdgeInsets.fromLTRB(10, 0, 0, 0),
       child: Text(
         text,
         style: TextStyle(

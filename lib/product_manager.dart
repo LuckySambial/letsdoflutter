@@ -32,29 +32,18 @@ class _ProductManagerState extends State<ProductManager> {
     return Container(
       width: 500,
       decoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topRight,
-          end: Alignment.bottomLeft,
-          colors: [
-            Colors.purple[400],
-            Colors.purple[600],
-            Colors.purple[800],
-            Colors.purple[900],
-          ],
+        image: new DecorationImage(
+          image: new AssetImage("assets/house_bg.jpg"),
+          fit: BoxFit.cover,
         ),
       ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          checkForProducts(_products),
-          Container(
-            child: RaisedButton(
-              color: Theme.of(context).primaryColor,
-              onPressed: () => nearbyWeather(),
-              child: TextComp(text: 'Nearby Me Weather!'),
-            ),
-          )
-        ],
+      child: Container(
+        margin: EdgeInsets.fromLTRB(0, 30, 0, 0),
+        child: Column(
+          children: [
+            checkForProducts(_products),
+          ],
+        ),
       ),
     );
   }
@@ -63,7 +52,7 @@ class _ProductManagerState extends State<ProductManager> {
     if (_products != null) {
       return Products(products);
     } else {
-      return TextComp(text: 'Loading!!!');
+      return Image(image: new AssetImage("assets/loader.gif"));
     }
   }
 
