@@ -10,6 +10,8 @@ class Products extends StatelessWidget {
   Widget build(BuildContext context) {
     var weather = products['weather'][0];
     Map<String, dynamic> mainWeather = products['main'];
+    Map<String, dynamic> wind = products['wind'];
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       mainAxisSize: MainAxisSize.min,
@@ -21,15 +23,15 @@ class Products extends StatelessWidget {
               Column(
                 children: <Widget>[
                   TextComp(
-                      text: mainWeather['temp'].toString() + '°',
+                      text: mainWeather['temp'].toInt().toString() + '°',
                       fontSize: 60.0),
                   TextComp(text: weather['main'], fontSize: 25.0),
                   TextComp(text: products['name'], fontSize: 15.0),
                 ],
               ),
               Container(
-                width: 150,
-                height: 150,
+                width: 120,
+                height: 120,
                 child: Image.network(
                     'https://openweathermap.org/img/w/' +
                         weather['icon'] +
@@ -44,8 +46,8 @@ class Products extends StatelessWidget {
             color: Color(0xFFB4C56C).withOpacity(0.3),
             borderRadius: BorderRadius.all(Radius.circular(50.0)),
           ),
-          margin: EdgeInsets.all(10),
-          padding: EdgeInsets.all(20),
+          margin: EdgeInsets.fromLTRB(10, 70, 10, 10),
+          padding: EdgeInsets.fromLTRB(30, 20, 20, 30),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
@@ -55,9 +57,9 @@ class Products extends StatelessWidget {
                     Icon(Icons.wifi_tethering, size: 40, color: Colors.white),
                     Container(
                       padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
-                      child: TextComp(text: mainWeather['temp'].toString()),
+                      child: TextComp(text: mainWeather['pressure'].toInt().toString()+'hpa', fontSize: 14.0),
                     ),
-                    TextComp(text: 'Temprature', fontSize: 12.0),
+                    TextComp(text: 'Air Pessure', fontSize: 12.0),
                   ],
                 ),
               ),
@@ -67,7 +69,7 @@ class Products extends StatelessWidget {
                     Icon(Icons.wb_incandescent, size: 40, color: Colors.white),
                     Container(
                       padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
-                      child: TextComp(text: mainWeather['humidity'].toString()),
+                      child: TextComp(text: mainWeather['humidity'].toString()+'%', fontSize: 14.0),
                     ),
                     TextComp(text: 'humidity', fontSize: 12.0),
                   ],
@@ -79,9 +81,9 @@ class Products extends StatelessWidget {
                     Icon(Icons.cloud_circle, size: 40, color: Colors.white),
                     Container(
                       padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
-                      child: TextComp(text: mainWeather['temp_min'].toString()),
+                      child: TextComp(text: wind['speed'].toString()+'km/h', fontSize: 14.0),
                     ),
-                    TextComp(text: 'Min Temp', fontSize: 12.0),
+                    TextComp(text: 'Wind', fontSize: 12.0),
                   ],
                 ),
               ),
