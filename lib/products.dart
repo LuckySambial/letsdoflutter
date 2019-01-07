@@ -43,7 +43,7 @@ class Products extends StatelessWidget {
         ),
         Container(
           decoration: BoxDecoration(
-            color: Color(0xFFB4C56C).withOpacity(0.3),
+            color: Color(0xFFB4C56C).withOpacity(0.6),
             borderRadius: BorderRadius.all(Radius.circular(50.0)),
           ),
           margin: EdgeInsets.fromLTRB(10, 70, 10, 10),

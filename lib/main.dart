@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 
-import './containers/welcom_screen.dart';
+import './product_manager.dart';
 
 void main() => runApp(MaterialApp(
   theme: ThemeData(
         primaryColor: Colors.purple,
         accentColor: Colors.white,
       ),
-   home: WelcomScreen(),
+      home: ProductManager(),
 ));
-
 
