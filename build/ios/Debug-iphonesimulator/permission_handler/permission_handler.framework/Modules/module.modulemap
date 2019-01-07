@@ -1,0 +1,11 @@
+framework module permission_handler {
+  umbrella header "permission_handler-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module permission_handler.Swift {
+    header "permission_handler-Swift.h"
+    requires objc
+}

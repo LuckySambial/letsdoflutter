@@ -1,79 +1,165 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-39:12
-INJECTED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-39:12
-INJECTED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-39:12
-INJECTED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-39:12
-INJECTED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-39:12
-INJECTED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-39:12
-INJECTED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-39:12
+ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-39:12
+INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-39:12
+INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-39:12
+INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-39:12
+MERGED from [:permission_handler] /Users/Mac1/FlutterTime/projects/letsdoflutter/build/permission_handler/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-7:12
+MERGED from [:geolocator] /Users/Mac1/FlutterTime/projects/letsdoflutter/build/geolocator/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-10:12
+MERGED from [:google_api_availability] /Users/Mac1/FlutterTime/projects/letsdoflutter/build/google_api_availability/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/cb7ed0f920ae3b3b56beb7d6f602d1da/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7b3a93afd7559f5387cb1068854c8e04/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/7e5e3b9b5f2cd393513eda9150e5c9d4/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/ab6ccc54fd500e10cf4730f3d61e5817/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/dc2bd59cbc711a95b54da3ac77ed3237/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:27.1.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/57f7928166db7e15f4c695cd804ac50b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/26412a88d13b3cac1fcd425741a18a3a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/077e4c8e4ac508d9d12834b0208fe938/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/2a43cc4eda65fc2f0c63fd4c945e07aa/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/835d9300b2bff4ca51cb831155cf71b9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/3e68ed1fa05c58567573b5c6f72c5026/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/3fc7a0cb8e907c62f3c5416cd7bfd6b7/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/b42774c1782485b71380b0643f6c4f14/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/851b1b0306295e944d8cb0c0fcc4b0b0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/5c0d48c0086aa4da3c87f5569bd84981/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-39:12
+INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-39:12
+INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-39:12
 	package
-		ADDED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:2:5-35
-		INJECTED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:2:5-35
+		INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-39:12
-		INJECTED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-39:12
+		INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-39:12
-		INJECTED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-39:12
+		INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:8:5-66
+ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:8:5-66
 	android:name
-		ADDED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:8:22-64
+		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:8:22-64
 application
-ADDED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:15:5-38:19
+ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:15:5-38:19
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/cb7ed0f920ae3b3b56beb7d6f602d1da/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/cb7ed0f920ae3b3b56beb7d6f602d1da/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7b3a93afd7559f5387cb1068854c8e04/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7b3a93afd7559f5387cb1068854c8e04/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/7e5e3b9b5f2cd393513eda9150e5c9d4/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/7e5e3b9b5f2cd393513eda9150e5c9d4/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/ab6ccc54fd500e10cf4730f3d61e5817/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/ab6ccc54fd500e10cf4730f3d61e5817/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/dc2bd59cbc711a95b54da3ac77ed3237/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/dc2bd59cbc711a95b54da3ac77ed3237/AndroidManifest.xml:22:5-26:19
 	android:label
-		ADDED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:17:9-33
+		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:17:9-33
 	android:icon
-		ADDED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:18:9-43
+		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:18:9-43
 	android:name
-		ADDED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:16:9-57
+		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:16:9-57
 activity#com.example.letsdoit.MainActivity
-ADDED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:19:9-37:20
+ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:19:9-37:20
 	android:launchMode
-		ADDED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:21:13-43
+		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:21:13-43
 	android:hardwareAccelerated
-		ADDED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:24:13-47
+		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:24:13-47
 	android:windowSoftInputMode
-		ADDED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:25:13-55
+		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:25:13-55
 	android:configChanges
-		ADDED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:23:13-137
+		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:23:13-137
 	android:theme
-		ADDED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:22:13-47
+		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:22:13-47
 	android:name
-		ADDED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:20:13-41
+		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:20:13-41
 meta-data#io.flutter.app.android.SplashScreenUntilFirstFrame
-ADDED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:30:13-32:40
+ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:30:13-32:40
 	android:value
-		ADDED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:32:17-37
+		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:32:17-37
 	android:name
-		ADDED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:31:17-82
+		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:31:17-82
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:33:13-36:29
+ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:33:13-36:29
 action#android.intent.action.MAIN
-ADDED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:34:17-68
+ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:34:17-68
 	android:name
-		ADDED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:34:25-66
+		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:34:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:35:17-76
+ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:35:17-76
 	android:name
-		ADDED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:35:27-74
+		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:35:27-74
 uses-sdk
-INJECTED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
+MERGED from [:permission_handler] /Users/Mac1/FlutterTime/projects/letsdoflutter/build/permission_handler/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:permission_handler] /Users/Mac1/FlutterTime/projects/letsdoflutter/build/permission_handler/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:geolocator] /Users/Mac1/FlutterTime/projects/letsdoflutter/build/geolocator/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:geolocator] /Users/Mac1/FlutterTime/projects/letsdoflutter/build/geolocator/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:google_api_availability] /Users/Mac1/FlutterTime/projects/letsdoflutter/build/google_api_availability/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:google_api_availability] /Users/Mac1/FlutterTime/projects/letsdoflutter/build/google_api_availability/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/cb7ed0f920ae3b3b56beb7d6f602d1da/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/cb7ed0f920ae3b3b56beb7d6f602d1da/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7b3a93afd7559f5387cb1068854c8e04/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7b3a93afd7559f5387cb1068854c8e04/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/7e5e3b9b5f2cd393513eda9150e5c9d4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/7e5e3b9b5f2cd393513eda9150e5c9d4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/ab6ccc54fd500e10cf4730f3d61e5817/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/ab6ccc54fd500e10cf4730f3d61e5817/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/dc2bd59cbc711a95b54da3ac77ed3237/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/dc2bd59cbc711a95b54da3ac77ed3237/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/57f7928166db7e15f4c695cd804ac50b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/57f7928166db7e15f4c695cd804ac50b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/26412a88d13b3cac1fcd425741a18a3a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/26412a88d13b3cac1fcd425741a18a3a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/077e4c8e4ac508d9d12834b0208fe938/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/077e4c8e4ac508d9d12834b0208fe938/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/2a43cc4eda65fc2f0c63fd4c945e07aa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/2a43cc4eda65fc2f0c63fd4c945e07aa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/835d9300b2bff4ca51cb831155cf71b9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/835d9300b2bff4ca51cb831155cf71b9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/3e68ed1fa05c58567573b5c6f72c5026/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/3e68ed1fa05c58567573b5c6f72c5026/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/3fc7a0cb8e907c62f3c5416cd7bfd6b7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/3fc7a0cb8e907c62f3c5416cd7bfd6b7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/b42774c1782485b71380b0643f6c4f14/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/b42774c1782485b71380b0643f6c4f14/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/851b1b0306295e944d8cb0c0fcc4b0b0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/851b1b0306295e944d8cb0c0fcc4b0b0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/5c0d48c0086aa4da3c87f5569bd84981/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/5c0d48c0086aa4da3c87f5569bd84981/AndroidManifest.xml:20:5-44
+INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/ucreate19/FlutterStuff/Projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from [:geolocator] /Users/Mac1/FlutterTime/projects/letsdoflutter/build/geolocator/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from [:geolocator] /Users/Mac1/FlutterTime/projects/letsdoflutter/build/geolocator/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [:geolocator] /Users/Mac1/FlutterTime/projects/letsdoflutter/build/geolocator/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from [:geolocator] /Users/Mac1/FlutterTime/projects/letsdoflutter/build/geolocator/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:8:22-78
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7b3a93afd7559f5387cb1068854c8e04/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7b3a93afd7559f5387cb1068854c8e04/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7b3a93afd7559f5387cb1068854c8e04/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7b3a93afd7559f5387cb1068854c8e04/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/dc2bd59cbc711a95b54da3ac77ed3237/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/dc2bd59cbc711a95b54da3ac77ed3237/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/dc2bd59cbc711a95b54da3ac77ed3237/AndroidManifest.xml:24:13-58

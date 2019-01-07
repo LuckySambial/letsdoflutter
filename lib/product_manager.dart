@@ -1,6 +1,9 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'dart:io';
+import 'package:geolocator/geolocator.dart';
 
 import './components//animated_fab.dart';
 import './products.dart';
@@ -22,7 +25,7 @@ class _ProductManagerState extends State<ProductManager> {
 
   @override
   void initState() {
-    getCurrentWeather().then((res) {
+    getCurrentWeatherWithLatLng('30.7046',"76.7179").then((res) {
       this.setState(() {
         _products = res;
       });
@@ -64,9 +67,35 @@ class _ProductManagerState extends State<ProductManager> {
   }
 
   Future<Map<String, dynamic>> getCurrentWeather() async {
+    var geolocator = Geolocator();
+    var locationOptions =
+        LocationOptions(accuracy: LocationAccuracy.high, distanceFilter: 10);
+    String lat = '', lng = '';
+
+    StreamSubscription<Position> positionStream = await geolocator
+        .getPositionStream(locationOptions)
+        .listen((Position _position) {
+    print("inside function");
+      if (_position != null) {
+        lat = _position.latitude.toString();
+        lng = _position.longitude.toString();
+        return getCurrentWeatherWithLatLng(lat, lng);
+      } else {
+        lat = '30.0000';
+        lng = '76.89889';
+        return getCurrentWeatherWithLatLng(lat, lng);
+      }
+    });
+  }
+
+  Future<Map<String, dynamic>> getCurrentWeatherWithLatLng(String lat, String lng) async{
+    print("inside function");
     Map<String, dynamic> data;
-    var url =
-        "https://openweathermap.org/data/2.5/weather?lat=30.444&lon=76.444&appid=b6907d289e10d714a6e88b30761fae22";
+    var url = "https://openweathermap.org/data/2.5/weather?lat=" +
+        lat +
+        "&lon=" +
+        lng +
+        "&appid=b6907d289e10d714a6e88b30761fae22";
     var httpClient = new HttpClient();
     var request = await httpClient.getUrl(Uri.parse(url));
     var response = await request.close();
@@ -95,6 +124,10 @@ class _ProductManagerState extends State<ProductManager> {
 
   _changeFilterState() {
     showOnlyCompleted = !showOnlyCompleted;
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => NearByWeather()),
+      );
     if (showOnlyCompleted) {
     } else {}
   }

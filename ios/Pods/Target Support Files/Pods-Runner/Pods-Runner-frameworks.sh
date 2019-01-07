@@ -144,12 +144,21 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${PODS_ROOT}/../.symlinks/flutter/ios/Flutter.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/geolocator/geolocator.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/google_api_availability/google_api_availability.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/permission_handler/permission_handler.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${PODS_ROOT}/../.symlinks/flutter/ios/Flutter.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/geolocator/geolocator.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/google_api_availability/google_api_availability.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/permission_handler/permission_handler.framework"
 fi
 if [[ "$CONFIGURATION" == "Profile" ]]; then
   install_framework "${PODS_ROOT}/../.symlinks/flutter/ios/Flutter.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/geolocator/geolocator.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/google_api_availability/google_api_availability.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/permission_handler/permission_handler.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

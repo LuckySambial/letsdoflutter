@@ -28,11 +28,12 @@ class NearByWeatherState extends State<NearByWeather> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        width: 500,
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height,
         padding: EdgeInsets.only(top: 20),
         decoration: BoxDecoration(
           image: new DecorationImage(
-            image: new AssetImage("assets/morning.jpg"),
+            image: new AssetImage("assets/house_bg.jpg"),
             fit: BoxFit.cover,
           ),
         ),
@@ -48,8 +49,8 @@ class NearByWeatherState extends State<NearByWeather> {
   Widget checkForWeathersList(cityList) {
     if (cityList != null) {
       return Container(
-        height: MediaQuery.of(context).size.height,
-        width: 500,
+        height: MediaQuery.of(context).size.height-20,
+        width: MediaQuery.of(context).size.width,
         child: ListView.builder(
           itemCount: cityList.length,
           itemBuilder: (context, index) {

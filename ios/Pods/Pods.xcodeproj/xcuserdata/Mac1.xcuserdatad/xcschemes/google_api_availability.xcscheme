@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AB2329032377B7B501F85EE37B9AF3AA"
+               BlueprintIdentifier = "36522D96DAE3C37F7F2C8EB078DDAF87"
                BlueprintName = "google_api_availability"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libgoogle_api_availability.a">
+               BuildableName = "google_api_availability.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
