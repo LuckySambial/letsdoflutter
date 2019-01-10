@@ -5,10 +5,13 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:geolocator/geolocator.dart';
 
+import 'package:carousel/carousel.dart';
 import './components//animated_fab.dart';
 import './products.dart';
 import 'containers/nearby_weather.dart';
+import 'containers/forecast.dart';
 import './components/text_comp.dart';
+import './utils//Config.dart';
 
 class ProductManager extends StatefulWidget {
   @override
@@ -25,11 +28,9 @@ class _ProductManagerState extends State<ProductManager> {
 
   @override
   void initState() {
-    getCurrentWeatherWithLatLng('30.7046',"76.7179").then((res) {
-      this.setState(() {
-        _products = res;
-      });
-    });
+    //Devices
+    getCurrentWeather();
+    //Simulator
     super.initState();
   }
 
@@ -66,7 +67,23 @@ class _ProductManagerState extends State<ProductManager> {
     }
   }
 
-  Future<Map<String, dynamic>> getCurrentWeather() async {
+  void getCurrentWeather() async {
+    getCurrentWeatherWithLatLng('30.424', '76.4343').then((res) {
+      this.setState(() {
+        _products = res;
+      });
+    });
+    return;
+
+    Position position = await Geolocator()
+        .getCurrentPosition(desiredAccuracy: LocationAccuracy.medium);
+    getCurrentWeatherWithLatLng(
+            position.latitude.toString(), position.longitude.toString())
+        .then((res) {
+      this.setState(() {
+        _products = res;
+      });
+    });
     var geolocator = Geolocator();
     var locationOptions =
         LocationOptions(accuracy: LocationAccuracy.high, distanceFilter: 10);
@@ -75,27 +92,33 @@ class _ProductManagerState extends State<ProductManager> {
     StreamSubscription<Position> positionStream = await geolocator
         .getPositionStream(locationOptions)
         .listen((Position _position) {
-    print("inside function");
       if (_position != null) {
         lat = _position.latitude.toString();
         lng = _position.longitude.toString();
-        return getCurrentWeatherWithLatLng(lat, lng);
+        getCurrentWeatherWithLatLng(lat, lng).then((res) {
+          this.setState(() {
+            _products = res;
+          });
+        });
       } else {
         lat = '30.0000';
         lng = '76.89889';
-        return getCurrentWeatherWithLatLng(lat, lng);
       }
     });
   }
 
-  Future<Map<String, dynamic>> getCurrentWeatherWithLatLng(String lat, String lng) async{
+  Future<Map<String, dynamic>> getCurrentWeatherWithLatLng(
+      String lat, String lng) async {
     print("inside function");
     Map<String, dynamic> data;
-    var url = "https://openweathermap.org/data/2.5/weather?lat=" +
+    var url = Config.CURRENT_WEATHER +
+        "lat=" +
         lat +
         "&lon=" +
         lng +
-        "&appid=b6907d289e10d714a6e88b30761fae22";
+        "&appid=" +
+        _apiKey +
+        '&units=metric';
     var httpClient = new HttpClient();
     var request = await httpClient.getUrl(Uri.parse(url));
     var response = await request.close();
@@ -106,11 +129,6 @@ class _ProductManagerState extends State<ProductManager> {
     } else {
       return data;
     }
-  }
-
-  nearbyWeather() {
-    Navigator.push(
-        context, MaterialPageRoute(builder: (context) => NearByWeather()));
   }
 
   Widget _buildFab() {
@@ -125,10 +143,32 @@ class _ProductManagerState extends State<ProductManager> {
   _changeFilterState() {
     showOnlyCompleted = !showOnlyCompleted;
     Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => NearByWeather()),
-      );
+      context,
+      MaterialPageRoute(builder: (context) => WeatherForecast(cityId: '524901')),
+    );
     if (showOnlyCompleted) {
     } else {}
+  }
+
+  Widget showWeatherForecast() {
+    return SizedBox(
+      height: 500.0,
+      child: Carousel(
+        animationCurve: Curves.ease,
+        children: [
+          NetworkImage(
+              'https://pbs.twimg.com/profile_images/760249570085314560/yCrkrbl3_400x400.jpg'),
+          NetworkImage(
+              'https://webinerds.com/app/uploads/2017/11/d49396_d9c5d967608d4bc1bcf09c9574eb67c9-mv2.png')
+        ]
+            .map((bgImg) => new Image(
+                image: bgImg,
+                width: MediaQuery.of(context).size.width - 100,
+                height: 200.0,
+                fit: BoxFit.cover))
+            .toList(),
+        displayDuration: const Duration(seconds: 3),
+      ),
+    );
   }
 }

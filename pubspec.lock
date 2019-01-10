@@ -15,6 +15,15 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.4"
+  carousel:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: HEAD
+      resolved-ref: "7c0ea58a2f8b5ac8a5de377648211a2ab5d67620"
+      url: "git://github.com/gbrvalerio/carousel.git"
+    source: git
+    version: "0.1.0"
   charcode:
     dependency: transitive
     description:
@@ -60,6 +69,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.4"
+  intl:
+    dependency: "direct main"
+    description:
+      name: intl
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.15.7"
   matcher:
     dependency: transitive
     description:

@@ -4,13 +4,16 @@ class TextComp extends StatelessWidget {
   String text = 'N/A';
   TextStyle textStyle;
   var fontSize;
-  TextComp({this.text, this.fontSize = 20.0});
+  var width;
+  TextComp({this.text, this.fontSize = 20.0, this.width});
   @override
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.fromLTRB(10, 0, 0, 0),
+      width: width,
       child: Text(
         text,
+        textAlign: TextAlign.center,
         style: TextStyle(
           color: Colors.white,
           fontSize: fontSize,

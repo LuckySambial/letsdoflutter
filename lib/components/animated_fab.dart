@@ -23,7 +23,9 @@ class _AnimatedFabState extends State<AnimatedFab>
     super.initState();
     _animationController =
         AnimationController(vsync: this, duration: Duration(milliseconds: 200));
-    _colorAnimation = ColorTween(begin: Color(0xFFB4C56C).withOpacity(0.8), end:  Color(0xFFB4C56C).withOpacity(0.5))
+    _colorAnimation = ColorTween(
+            begin: Color(0xFFB4C56C).withOpacity(0.8),
+            end: Color(0xFFB4C56C).withOpacity(0.5))
         .animate(_animationController);
   }
 
@@ -45,9 +47,9 @@ class _AnimatedFabState extends State<AnimatedFab>
             alignment: Alignment.center,
             children: <Widget>[
               _buildExpandedBackground(),
-              _buildOption(Icons.check_circle, 0.0),
+              _buildOption(Icons.cloud_circle, 0.0),
               _buildOption(Icons.flash_on, -math.pi / 3),
-              _buildOption(Icons.access_time, -2 * math.pi / 3),
+              _buildOption(Icons.location_on, -2 * math.pi / 3),
               _buildOption(Icons.error_outline, math.pi),
               _buildFabCore(),
             ],
