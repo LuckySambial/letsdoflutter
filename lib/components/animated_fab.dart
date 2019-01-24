@@ -24,8 +24,8 @@ class _AnimatedFabState extends State<AnimatedFab>
     _animationController =
         AnimationController(vsync: this, duration: Duration(milliseconds: 200));
     _colorAnimation = ColorTween(
-            begin: Color(0xFFB4C56C).withOpacity(0.8),
-            end: Color(0xFFB4C56C).withOpacity(0.5))
+            begin: Colors.white.withOpacity(0.9),
+            end: Colors.white.withOpacity(0.5))
         .animate(_animationController);
   }
 
@@ -79,7 +79,7 @@ class _AnimatedFabState extends State<AnimatedFab>
               angle: -angle,
               child: Icon(
                 icon,
-                color: Colors.white,
+                color: Colors.black,
               ),
             ),
             iconSize: iconSize,
@@ -98,7 +98,7 @@ class _AnimatedFabState extends State<AnimatedFab>
       height: size,
       width: size,
       decoration: BoxDecoration(
-          shape: BoxShape.circle, color: Color(0xFFB4C56C).withOpacity(0.8)),
+          shape: BoxShape.circle, color: Colors.white.withOpacity(0.9)),
     );
   }
 
@@ -111,7 +111,7 @@ class _AnimatedFabState extends State<AnimatedFab>
         transform: Matrix4.identity()..scale(1.0, scaleFactor),
         child: Icon(
           _animationController.value > 0.5 ? Icons.close : Icons.filter_list,
-          color: Colors.white,
+          color: Colors.black,
           size: 26.0,
         ),
       ),

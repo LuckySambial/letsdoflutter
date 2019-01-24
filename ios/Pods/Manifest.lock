@@ -4,6 +4,14 @@ PODS:
     - Flutter
   - google_api_availability (1.0.4):
     - Flutter
+  - google_maps_flutter (0.0.1):
+    - Flutter
+    - GoogleMaps
+  - GoogleMaps (2.7.0):
+    - GoogleMaps/Maps (= 2.7.0)
+  - GoogleMaps/Base (2.7.0)
+  - GoogleMaps/Maps (2.7.0):
+    - GoogleMaps/Base
   - permission_handler (2.1.2):
     - Flutter
 
@@ -11,7 +19,12 @@ DEPENDENCIES:
   - Flutter (from `.symlinks/flutter/ios`)
   - geolocator (from `.symlinks/plugins/geolocator/ios`)
   - google_api_availability (from `.symlinks/plugins/google_api_availability/ios`)
+  - google_maps_flutter (from `.symlinks/plugins/google_maps_flutter/ios`)
   - permission_handler (from `.symlinks/plugins/permission_handler/ios`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GoogleMaps
 
 EXTERNAL SOURCES:
   Flutter:
@@ -20,6 +33,8 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/geolocator/ios"
   google_api_availability:
     :path: ".symlinks/plugins/google_api_availability/ios"
+  google_maps_flutter:
+    :path: ".symlinks/plugins/google_maps_flutter/ios"
   permission_handler:
     :path: ".symlinks/plugins/permission_handler/ios"
 
@@ -27,6 +42,8 @@ SPEC CHECKSUMS:
   Flutter: 9d0fac939486c9aba2809b7982dfdbb47a7b0296
   geolocator: c2e347e8da0e60d3b08e714a684851e9c137abbe
   google_api_availability: b19830d6be60d6b92dce5fc5b9137c31b04afbf1
+  google_maps_flutter: 6449d5918d3f1a69a37dc9c557bbad7bb9bcf0e9
+  GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
   permission_handler: ccfc62fb39274a876cb21737e72a746f4c7efa94
 
 PODFILE CHECKSUM: 4e42fc1dbc9b60196f45ffa3b5fe6b790b9dd3b8

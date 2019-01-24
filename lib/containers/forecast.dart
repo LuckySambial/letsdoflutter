@@ -9,8 +9,8 @@ import '../components/text_comp.dart';
 import 'package:intl/intl.dart';
 
 class WeatherForecast extends StatefulWidget {
-  String cityId;
-  WeatherForecast({this.cityId});
+  String cityId, name;
+  WeatherForecast({this.cityId, this.name});
   @override
   State<StatefulWidget> createState() {
     return WeatherForecastState();
@@ -35,10 +35,18 @@ class WeatherForecastState extends State<WeatherForecast> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Weather Forecast!'),
-        backgroundColor: Color(0xFFB4C56C).withOpacity(0.7),
+        title: Text(widget.name + ' Weather Forecast!'),
+        backgroundColor: Color(000000).withOpacity(0.9),
       ),
       body: Container(
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height,
+        decoration: BoxDecoration(
+          image: new DecorationImage(
+            image: new AssetImage("assets/house_bg.jpg"),
+            fit: BoxFit.cover,
+          ),
+        ),
         child: SizedBox(
           height: 500.0,
           child: finalData.length > 0
@@ -88,7 +96,7 @@ class WeatherForecastState extends State<WeatherForecast> {
       animationCurve: Curves.ease,
       children: finalData
           .map((item) => Card(
-                color: Color(0xFFB4C56C).withOpacity(0.7),
+                color: Color(000000).withOpacity(0.5),
                 child: Container(
                   width: MediaQuery.of(context).size.width - 50,
                   height: MediaQuery.of(context).size.height - 300,
@@ -157,11 +165,11 @@ class WeatherForecastState extends State<WeatherForecast> {
 }
 
 class WeatherCast {
-  final double temp;
+  var temp;
   final String icon;
-  final double minTemp;
-  final double maxTemp;
-  final double pressure;
+  var minTemp;
+  var maxTemp;
+  var pressure;
   final int humidity;
   final String main;
   final String description;

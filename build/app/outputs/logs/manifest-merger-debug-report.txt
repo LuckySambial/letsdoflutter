@@ -1,12 +1,14 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-39:12
-INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-39:12
-INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-39:12
-INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-39:12
+ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-41:12
+INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-41:12
+INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-41:12
+INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-41:12
 MERGED from [:permission_handler] /Users/Mac1/FlutterTime/projects/letsdoflutter/build/permission_handler/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-7:12
+MERGED from [:google_maps_flutter] /Users/Mac1/FlutterTime/projects/letsdoflutter/build/google_maps_flutter/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-7:12
 MERGED from [:geolocator] /Users/Mac1/FlutterTime/projects/letsdoflutter/build/geolocator/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-10:12
 MERGED from [:google_api_availability] /Users/Mac1/FlutterTime/projects/letsdoflutter/build/google_api_availability/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/33c0cf62254d99d08068462c0d7303e4/AndroidManifest.xml:17:1-32:12
 MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/cb7ed0f920ae3b3b56beb7d6f602d1da/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7b3a93afd7559f5387cb1068854c8e04/AndroidManifest.xml:17:1-29:12
 MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/7e5e3b9b5f2cd393513eda9150e5c9d4/AndroidManifest.xml:17:1-24:12
@@ -22,29 +24,33 @@ MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/Mac1/.gradle/caches/tr
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/b42774c1782485b71380b0643f6c4f14/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/851b1b0306295e944d8cb0c0fcc4b0b0/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/5c0d48c0086aa4da3c87f5569bd84981/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-39:12
-INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-39:12
-INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-39:12
+INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-41:12
+INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-41:12
+INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-41:12
 	package
 		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:2:5-35
 		INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-39:12
+		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-41:12
 		INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-39:12
+		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:1-41:12
 		INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
 ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:8:5-66
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/33c0cf62254d99d08068462c0d7303e4/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/33c0cf62254d99d08068462c0d7303e4/AndroidManifest.xml:24:5-67
 	android:name
 		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:8:22-64
 application
-ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:15:5-38:19
+ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:15:5-40:19
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/33c0cf62254d99d08068462c0d7303e4/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/33c0cf62254d99d08068462c0d7303e4/AndroidManifest.xml:30:5-20
 MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/cb7ed0f920ae3b3b56beb7d6f602d1da/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/cb7ed0f920ae3b3b56beb7d6f602d1da/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7b3a93afd7559f5387cb1068854c8e04/AndroidManifest.xml:22:5-27:19
@@ -91,16 +97,26 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:35:17-76
 	android:name
 		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:35:27-74
+meta-data#com.google.android.geo.API_KEY
+ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:38:10-39:73
+	android:value
+		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:39:16-71
+	android:name
+		ADDED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml:38:21-66
 uses-sdk
 INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/Mac1/FlutterTime/projects/letsdoflutter/android/app/src/main/AndroidManifest.xml
 MERGED from [:permission_handler] /Users/Mac1/FlutterTime/projects/letsdoflutter/build/permission_handler/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
 MERGED from [:permission_handler] /Users/Mac1/FlutterTime/projects/letsdoflutter/build/permission_handler/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:google_maps_flutter] /Users/Mac1/FlutterTime/projects/letsdoflutter/build/google_maps_flutter/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:google_maps_flutter] /Users/Mac1/FlutterTime/projects/letsdoflutter/build/google_maps_flutter/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
 MERGED from [:geolocator] /Users/Mac1/FlutterTime/projects/letsdoflutter/build/geolocator/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
 MERGED from [:geolocator] /Users/Mac1/FlutterTime/projects/letsdoflutter/build/geolocator/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
 MERGED from [:google_api_availability] /Users/Mac1/FlutterTime/projects/letsdoflutter/build/google_api_availability/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
 MERGED from [:google_api_availability] /Users/Mac1/FlutterTime/projects/letsdoflutter/build/google_api_availability/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/33c0cf62254d99d08068462c0d7303e4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/33c0cf62254d99d08068462c0d7303e4/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/cb7ed0f920ae3b3b56beb7d6f602d1da/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/cb7ed0f920ae3b3b56beb7d6f602d1da/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7b3a93afd7559f5387cb1068854c8e04/AndroidManifest.xml:20:5-44
@@ -149,6 +165,16 @@ uses-permission#android.permission.ACCESS_COARSE_LOCATION
 ADDED from [:geolocator] /Users/Mac1/FlutterTime/projects/letsdoflutter/build/geolocator/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:8:5-81
 	android:name
 		ADDED from [:geolocator] /Users/Mac1/FlutterTime/projects/letsdoflutter/build/geolocator/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:8:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/33c0cf62254d99d08068462c0d7303e4/AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/33c0cf62254d99d08068462c0d7303e4/AndroidManifest.xml:23:22-76
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/33c0cf62254d99d08068462c0d7303e4/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/33c0cf62254d99d08068462c0d7303e4/AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/33c0cf62254d99d08068462c0d7303e4/AndroidManifest.xml:28:9-32
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/Mac1/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/7b3a93afd7559f5387cb1068854c8e04/AndroidManifest.xml:23:9-26:75
 	android:exported

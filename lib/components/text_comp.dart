@@ -1,11 +1,20 @@
 import 'package:flutter/material.dart';
 
+import '../utils/Colors.dart';
+
 class TextComp extends StatelessWidget {
   String text = 'N/A';
   TextStyle textStyle;
   var fontSize;
   var width;
-  TextComp({this.text, this.fontSize = 20.0, this.width});
+  var fontWeight;
+  var color;
+  TextComp(
+      {this.text,
+      this.color = Colors.white,
+      this.fontSize = 20.0,
+      this.width,
+      this.fontWeight = FontWeight.bold});
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -15,8 +24,9 @@ class TextComp extends StatelessWidget {
         text,
         textAlign: TextAlign.center,
         style: TextStyle(
-          color: Colors.white,
+          color: color,
           fontSize: fontSize,
+          fontWeight: fontWeight,
         ),
       ),
     );

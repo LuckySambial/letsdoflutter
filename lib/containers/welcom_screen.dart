@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../product_manager.dart';
+import './tab_navigator.dart';
 class WelcomScreen extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -36,7 +37,7 @@ class WelcomeScreenState extends State<WelcomScreen> {
     onLoginClick() {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => ProductManager()),
+        MaterialPageRoute(builder: (context) => TabNavigator()),
       );
     }
     return Scaffold(
